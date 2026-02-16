@@ -1,0 +1,28 @@
+{
+  "name": "terroir-coffee",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "dev:api": "tsx watch src/api/index.ts",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test": "vitest",
+    "test:run": "vitest run"
+  },
+  "dependencies": {
+    "@astrojs/svelte": "^7.2.5",
+    "@hono/node-server": "^1.19.9",
+    "astro": "^5.17.2",
+    "hono": "^4.11.9",
+    "svelte": "^5.51.2"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^6.2.4",
+    "@testing-library/svelte": "^5.3.1",
+    "jsdom": "^28.1.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
+}
