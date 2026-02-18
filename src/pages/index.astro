@@ -11,38 +11,30 @@ import Testimonials from '../components/Testimonials.svelte';
 import CTA from '../components/CTA.svelte';
 import Newsletter from '../components/Newsletter.svelte';
 import Footer from '../components/Footer.svelte';
-import ScrollReveal from '../components/ScrollReveal.svelte';
+import GsapAnimations from '../components/GsapAnimations.svelte';
 ---
 <BaseLayout>
   <Nav client:load />
 
   <Hero />
 
-  <ScrollReveal client:visible>
-    <FeaturesStrip />
-  </ScrollReveal>
+  <FeaturesStrip />
 
-  <ScrollReveal client:visible>
-    <Story />
-  </ScrollReveal>
+  <Story />
 
   <CoffeeMenu client:visible />
 
-  <ScrollReveal client:visible>
-    <HowItWorks />
-  </ScrollReveal>
+  <HowItWorks />
 
-  <ScrollReveal client:visible>
-    <Pricing />
-  </ScrollReveal>
+  <Pricing />
 
   <Testimonials client:visible />
 
-  <ScrollReveal client:visible>
-    <CTA />
-  </ScrollReveal>
+  <CTA />
 
   <Newsletter client:visible />
 
   <Footer />
+
+  <GsapAnimations client:load />
 </BaseLayout>
